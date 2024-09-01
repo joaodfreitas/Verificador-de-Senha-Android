@@ -11,12 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Referências aos elementos da interface
         val editTextSenha = findViewById<EditText>(R.id.editTextSenha)
         val buttonVerificarSenha = findViewById<Button>(R.id.buttonVerificarSenha)
         val textViewResultado = findViewById<TextView>(R.id.textViewResultado)
 
-        // Senha fixa
         val senhaCorreta = "1234"
 
         buttonVerificarSenha.setOnClickListener {
